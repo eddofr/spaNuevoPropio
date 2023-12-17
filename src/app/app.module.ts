@@ -10,6 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
     HomeComponent,
     NavbarComponent,
     HeroeComponent,
-    HeroeTarjetaComponent
+    HeroeTarjetaComponent,
+    BuscadorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     HeroesService
